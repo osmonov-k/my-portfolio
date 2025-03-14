@@ -10,7 +10,7 @@ const Blog = () => {
     {
       id: 1,
       image: "/src/assets/images/blog/blog1.jpg",
-      date: "4 jun 2020",
+      date: "15 March 2025",
       title: "Responsive Web Design",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, porro rem quod illo quam, eum alias id, repellendus magni, quas.",
@@ -19,8 +19,8 @@ const Blog = () => {
     {
       id: 2,
       image: "/src/assets/images/blog/blog2.jpg",
-      date: "4 jun 2020",
-      title: "Creative Slideshow",
+      date: "15 March 2025",
+      title: "React State Management",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, porro rem quod illo quam, eum alias id, repellendus magni, quas.",
       tags: ["Html", "Javascript"],
@@ -28,8 +28,8 @@ const Blog = () => {
     {
       id: 3,
       image: "/src/assets/images/blog/blog3.jpg",
-      date: "4 jun 2020",
-      title: "Image Gallery Lightbox",
+      date: "15 March 2025",
+      title: "Effective CSS structure",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, porro rem quod illo quam, eum alias id, repellendus magni, quas.",
       tags: ["Javascript"],
@@ -62,7 +62,7 @@ const Blog = () => {
                     Tags :{" "}
                     {item.tags.map((tag, index) => (
                       <a href="#" key={index}>
-                        {tag}
+                        {tag},
                       </a>
                     ))}
                   </p>

@@ -13,11 +13,17 @@ const Home = () => {
   useEffect(() => {
     init(textRef.current, {
       strings: [
-        "I'm a Web Developer",
-        "I Love Html5",
-        "I Love CSS3",
-        "I Love Jquery",
-        "I Love Laravel",
+        "Hi, I'm Kanat! 👋",
+        "Crafting pixel-perfect UIs 🎨",
+        "Building with React & JavaScript ⚛️",
+        "Passionate about clean code ✨",
+        "Designing for humans, not screens 🖥️",
+        "Making the web accessible ♿",
+        "Turning ideas into reality 💡",
+        "Creating seamless user experiences 🚀",
+        "Styling with CSS magic 🪄",
+        "Solving problems with code 🛠️",
+        "Bringing designs to life 🌟",
       ],
       loop: true,
     });
@@ -47,7 +53,11 @@ const Home = () => {
             <a href="#">
               <i className="fa fa-instagram"></i>
             </a>
-            <a href="#">
+            <a
+              href="https://www.linkedin.com/in/kanat-osmon-dev"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i className="fa fa-linkedin"></i>
             </a>
           </div>
