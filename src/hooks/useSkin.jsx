@@ -1,9 +1,11 @@
-// src/hooks/useSkin.jsx
-import { useContext, useEffect } from "react";
+import { useContext, useEffect, useState } from "react";
 import { SkinContext } from "../context/SkinContext";
 
 export const useSkin = () => {
   const { skin, changeSkin } = useContext(SkinContext);
+  const [isDarkMode, setIsDarkMode] = useState(
+    localStorage.getItem("darkMode") === "true"
+  );
 
   useEffect(() => {
     // Remove existing skin styles
@@ -19,16 +21,25 @@ export const useSkin = () => {
       document.head.appendChild(link);
     }
 
-    // Apply light/dark mode
-    if (skin === "dark") {
+    // Apply dark mode separately from skin selection
+    if (isDarkMode) {
       document.body.classList.add("dark");
-    } else if (skin === "light") {
-      document.body.classList.remove("dark");
     } else {
-      // If a skin is selected, ensure dark mode is not applied
       document.body.classList.remove("dark");
     }
-  }, [skin]);
+  }, [skin, isDarkMode]);
 
-  return { skin, changeSkin };
+  const toggleDarkMode = (mode) => {
+    const darkModeEnabled = mode === "dark";
+    setIsDarkMode(darkModeEnabled);
+    localStorage.setItem("darkMode", darkModeEnabled.toString());
+
+    if (darkModeEnabled) {
+      document.body.classList.add("dark");
+    } else {
+      document.body.classList.remove("dark");
+    }
+  };
+
+  return { skin, changeSkin, isDarkMode, toggleDarkMode };
 };

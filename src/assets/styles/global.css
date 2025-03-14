@@ -36,7 +36,7 @@ select {
   display: block;
   padding: 0 30px;
   position: fixed;
-  left: 0;
+  left: 270px;
   top: 0;
   right: 0;
   bottom: 0;
@@ -289,6 +289,20 @@ body.dark .about .about-content .skills .skill-item .progress {
 
 body.dark .about .about-content .skills .skill-item .progress .progress-in {
   background-color: #2196f3; /* Skin color */
+}
+
+body.dark .home h1,
+body.dark .about h2,
+body.dark .portfolio h2,
+body.dark .portfolio button,
+body.dark .blog h2,
+body.dark .contact h2,
+body.dark .home span {
+  color: #ffffff;
+}
+
+body.dark .style-switcher {
+  color: #302e4d;
 }
 
 @media (max-width: 1199px) {

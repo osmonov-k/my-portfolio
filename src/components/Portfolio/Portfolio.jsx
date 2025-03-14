@@ -76,21 +76,21 @@ const Portfolio = () => {
               className={filter === "web-design" ? "active" : ""}
               onClick={() => setFilter("web-design")}
             >
-              Web Design
+              Web
             </button>
             <button
               type="button"
               className={filter === "photography" ? "active" : ""}
               onClick={() => setFilter("photography")}
             >
-              Photography
+              Games
             </button>
             <button
               type="button"
               className={filter === "wordpress" ? "active" : ""}
               onClick={() => setFilter("wordpress")}
             >
-              Wordpress
+              Data & AI
             </button>
           </div>
         </div>

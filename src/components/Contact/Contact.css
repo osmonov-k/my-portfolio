@@ -22,6 +22,9 @@
   text-transform: capitalize;
   margin: 15px 0 5px;
 }
+body.dark .contact .contact-info-item h4 {
+  color: #e0e0e0; /* Lighter color for text in dark mode */
+}
 
 .contact .contact-info-item p {
   font-size: 16px;
@@ -29,6 +32,9 @@
   color: #504e70;
   margin: 0;
   font-weight: 400;
+}
+body.dark .contact .contact-info-item p {
+  color: #e0e0e0; /* Lighter color for text in dark mode */
 }
 
 .contact .contact-form {

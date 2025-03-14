@@ -22,120 +22,27 @@ const About = () => {
             <div className="row">
               <div className="about-text padd-15">
                 <h3>
-                  I'm Upvesh Kumar and <span>Web Developer</span>
+                  <span>Web Developer</span>
                 </h3>
                 <p>
-                  Hi! My name is Upvesh Kumar. I am a Web Developer, and I'm
-                  very passionate and dedicated to my work. With 10 years
-                  experience as a professional Web developer, I have acquired
-                  the skills and knowledge necessary to make your project a
-                  success. I enjoy every step of the design process, from
-                  discussion and collaboration.{" "}
+                  I’m a front-end developer passionate about crafting
+                  accessible, high-performance user interfaces that seamlessly
+                  blend thoughtful design with robust engineering. My work
+                  focuses on creating intuitive, pixel-perfect experiences that
+                  not only look great but are meticulously built for usability
+                  and scalability. With a strong foundation in React.js,
+                  TypeScript, and modern web technologies, I thrive at the
+                  intersection of design and development, delivering solutions
+                  that drive business growth and exceptional user experiences.
                 </p>
               </div>
             </div>
-            <div className="row">
-              <div className="personal-info padd-15">
-                <div className="row">
-                  <div className="info-item padd-15">
-                    <p>
-                      Birthday : <span>5 June 1992</span>
-                    </p>
-                  </div>
-                  <div className="info-item padd-15">
-                    <p>
-                      Age : <span>28</span>
-                    </p>
-                  </div>
-                  <div className="info-item padd-15">
-                    <p>
-                      Website : <span>www.domain.com</span>
-                    </p>
-                  </div>
-                  <div className="info-item padd-15">
-                    <p>
-                      Email : <span>info@gmail.com</span>
-                    </p>
-                  </div>
-                  <div className="info-item padd-15">
-                    <p>
-                      Degree : <span>M.Tech</span>
-                    </p>
-                  </div>
-                  <div className="info-item padd-15">
-                    <p>
-                      Phone : <span>+91 8800 000 000</span>
-                    </p>
-                  </div>
-                  <div className="info-item padd-15">
-                    <p>
-                      City : <span>Mumbai</span>
-                    </p>
-                  </div>
-                  <div className="info-item padd-15">
-                    <p>
-                      Freelance : <span>Available</span>
-                    </p>
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="buttons padd-15">
-                    <a href="#" className="btn">
-                      Download Cv
-                    </a>
-                    <a
-                      href="#contact"
-                      data-section-index="1"
-                      className="btn hire-me"
-                    >
-                      Hire me
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="skills padd-15">
-                <div className="row">
-                  <div className="skill-item padd-15">
-                    <h5>Javascript</h5>
-                    <div className="progress">
-                      <div
-                        className="progress-in"
-                        style={{ width: "76%" }}
-                      ></div>
-                      <div className="skill-porcent">76%</div>
-                    </div>
-                  </div>
-                  <div className="skill-item padd-15">
-                    <h5>Wordpress</h5>
-                    <div className="progress">
-                      <div
-                        className="progress-in"
-                        style={{ width: "90%" }}
-                      ></div>
-                      <div className="skill-porcent">90%</div>
-                    </div>
-                  </div>
-                  <div className="skill-item padd-15">
-                    <h5>Java</h5>
-                    <div className="progress">
-                      <div
-                        className="progress-in"
-                        style={{ width: "80%" }}
-                      ></div>
-                      <div className="skill-porcent">80%</div>
-                    </div>
-                  </div>
-                  <div className="skill-item padd-15">
-                    <h5>Bootstrap</h5>
-                    <div className="progress">
-                      <div
-                        className="progress-in"
-                        style={{ width: "60%" }}
-                      ></div>
-                      <div className="skill-porcent">60%</div>
-                    </div>
-                  </div>
-                </div>
+
+            <div className="personal-info padd-15">
+              <div className="row">
+                <a href="#" className="btn">
+                  Download Cv
+                </a>
               </div>
             </div>
 
@@ -149,15 +56,13 @@ const About = () => {
                       <div className="timeline-item">
                         <div className="circle-dot"></div>
                         <h6 className="timeline-date">
-                          <i className="fa fa-calendar"></i> 2013 - 2015
+                          <i className="fa fa-calendar"></i> 2018 - 2019
                         </h6>
                         <h4 className="timeline-title">
-                          Master In Computer Science
+                          Master of Business Analytics (MBAN)
                         </h4>
                         <p className="timeline-text">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Quisque scelerisque diam non nisi semper, et
-                          elementum lorem ornare.
+                          Hult International Business School, San Francisco, CA
                         </p>
                       </div>
                       {/* timeline Item End */}
@@ -165,15 +70,13 @@ const About = () => {
                       <div className="timeline-item">
                         <div className="circle-dot"></div>
                         <h6 className="timeline-date">
-                          <i className="fa fa-calendar"></i> 2011 - 2013
+                          <i className="fa fa-calendar"></i> 2019 - 2020
                         </h6>
                         <h4 className="timeline-title">
-                          Studied At Delhi University
+                          Master of International Business (MIB)
                         </h4>
                         <p className="timeline-text">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Quisque scelerisque diam non nisi semper, et
-                          elementum lorem ornare.
+                          Hult International Business School, San Francisco, CA
                         </p>
                       </div>
                       {/* timeline Item End */}
@@ -181,13 +84,13 @@ const About = () => {
                       <div className="timeline-item">
                         <div className="circle-dot"></div>
                         <h6 className="timeline-date">
-                          <i className="fa fa-calendar"></i> 2008 - 2011
+                          <i className="fa fa-calendar"></i> 2014 - 2018
                         </h6>
-                        <h4 className="timeline-title">Bachelor Degree</h4>
+                        <h4 className="timeline-title">
+                          Bachelor of Business Administration (BBA), Finance
+                        </h4>
                         <p className="timeline-text">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Quisque scelerisque diam non nisi semper, et
-                          elementum lorem ornare.
+                          American University of Central Asia, Bishkek
                         </p>
                       </div>
                       {/* timeline Item End */}
@@ -204,42 +107,75 @@ const About = () => {
                       <div className="timeline-item">
                         <div className="circle-dot"></div>
                         <h6 className="timeline-date">
-                          <i className="fa fa-calendar"></i> 2013 - 2015
+                          <i className="fa fa-calendar"></i> 2023 - Present
                         </h6>
-                        <h4 className="timeline-title">Backend Developer</h4>
+                        <h4 className="timeline-title">
+                          Frontend Software Engineer | Bank of America | San
+                          Jose, CA{" "}
+                        </h4>
                         <p className="timeline-text">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Quisque scelerisque diam non nisi semper, et
-                          elementum lorem ornare.
+                          Modernized the Wires application using React, Redux,
+                          and TypeScript while ensuring WCAG 2.1 Level AAA
+                          compliance. Led feature development and bug
+                          resolution, improving performance, accessibility, and
+                          user experience.
                         </p>
+                        <div className="timeline-skills">
+                          <span className="timeline-skill">React</span>
+                          <span className="timeline-skill">Redux</span>
+                          <span className="timeline-skill">TypeScript</span>
+                          <span className="timeline-skill">HTML5</span>
+                          <span className="timeline-skill">CSS3</span>
+                        </div>
                       </div>
                       {/* timeline Item End */}
                       {/* timeline Item */}
                       <div className="timeline-item">
                         <div className="circle-dot"></div>
                         <h6 className="timeline-date">
-                          <i className="fa fa-calendar"></i> 2011 - 2013
+                          <i className="fa fa-calendar"></i> 2021 - 2023
                         </h6>
-                        <h4 className="timeline-title">Frontend Developer</h4>
+                        <h4 className="timeline-title">
+                          Frontend Engineer | Edmunds | Santa Monica, CA
+                        </h4>
                         <p className="timeline-text">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Quisque scelerisque diam non nisi semper, et
-                          elementum lorem ornare.
+                          Built 100+ reusable UI components with React and
+                          TypeScript, ensuring accessibility and performance.
+                          Optimized test coverage to 95% and developed scalable
+                          applications using RTK Query, Node.js, and Three.js.
                         </p>
+                        <div className="timeline-skills">
+                          <span className="timeline-skill">React</span>
+                          <span className="timeline-skill">JavaScript</span>
+                          <span className="timeline-skill">WCAG</span>
+                          <span className="timeline-skill">Jest</span>
+                          <span className="timeline-skill">Node.js</span>
+                        </div>
                       </div>
                       {/* timeline Item End */}
                       {/* timeline Item */}
                       <div className="timeline-item">
                         <div className="circle-dot"></div>
                         <h6 className="timeline-date">
-                          <i className="fa fa-calendar"></i> 2008 - 2011
+                          <i className="fa fa-calendar"></i> 2019 - 2021
                         </h6>
-                        <h4 className="timeline-title">Graphic Designer</h4>
+                        <h4 className="timeline-title">
+                          QA Tester | Illumio | Sunnyvale, CA
+                        </h4>
                         <p className="timeline-text">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Quisque scelerisque diam non nisi semper, et
-                          elementum lorem ornare.
+                          Developed automated test scripts with Selenium,
+                          Cucumber, and Java, achieving 85% automation coverage.
+                          Conducted API, database, and UI testing while
+                          streamlining CI/CD pipelines and ensuring software
+                          reliability.
                         </p>
+                        <div className="timeline-skills">
+                          <span className="timeline-skill">JAVA</span>
+                          <span className="timeline-skill">Selenium</span>
+                          <span className="timeline-skill">Cucumber</span>
+                          <span className="timeline-skill">Rest</span>
+                          <span className="timeline-skill">SQL</span>
+                        </div>
                       </div>
                       {/* timeline Item End */}
                     </div>
