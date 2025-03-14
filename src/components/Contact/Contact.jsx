@@ -1,10 +1,16 @@
 // src/components/Contact/Contact.jsx
-import React from "react";
+import React, { useContext } from "react";
 import "./Contact.css";
+import { AsideContext } from "../../context/AsideContext";
 
 const Contact = () => {
+  const { isAsideOpen } = useContext(AsideContext);
+
   return (
-    <section className="contact section" id="contact">
+    <section
+      className={`contact section active ${isAsideOpen ? "aside-open" : ""}`}
+      id="contact"
+    >
       <div className="container">
         <div className="row">
           <div className="section-title padd-15">
@@ -15,22 +21,22 @@ const Contact = () => {
           <div className="contact-info-item padd-15">
             <div className="icon">
               <i className="fa fa-phone"></i>
-              <h4>Call Us On</h4>
-              <p>+91 8800 000 000</p>
+              <h4>Phone</h4>
+              <p>(650)388-6038</p>
             </div>
           </div>
           <div className="contact-info-item padd-15">
             <div className="icon">
               <i className="fa fa-map-marker"></i>
-              <h4>Office</h4>
-              <p>44 Street, New Delhi, India</p>
+              <h4>Location</h4>
+              <p>Bay Area, CA</p>
             </div>
           </div>
           <div className="contact-info-item padd-15">
             <div className="icon">
               <i className="fa fa-envelope"></i>
               <h4>Email</h4>
-              <p>info@gmail.com</p>
+              <p>kanat.osmon.webdev@gmail.com </p>
             </div>
           </div>
         </div>

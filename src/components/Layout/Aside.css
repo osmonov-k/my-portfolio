@@ -56,7 +56,7 @@
   right: 0;
 }
 
-.aside .nav-toggler {
+.nav-toggler {
   height: 40px;
   width: 45px;
   border: 1px solid #d4d4e3;
@@ -76,18 +76,18 @@
   -webkit-transition: all 0.3s ease;
 }
 
-.aside .nav-toggler span {
+.nav-toggler span {
   height: 2px;
   width: 18px;
   display: inline-block;
   position: relative;
 }
 
-.aside .nav-toggler.open span {
+.nav-toggler.open span {
   background-color: transparent;
 }
 
-.aside .nav-toggler span::before {
+.nav-toggler span::before {
   content: "";
   height: 2px;
   width: 18px;
@@ -96,13 +96,13 @@
   left: 0;
 }
 
-.aside .nav-toggler.open span::before {
+.nav-toggler.open span::before {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   top: 0px;
 }
 
-.aside .nav-toggler span::after {
+.nav-toggler span::after {
   content: "";
   height: 2px;
   width: 18px;
@@ -111,7 +111,7 @@
   left: 0;
 }
 
-.aside .nav-toggler.open span::after {
+.nav-toggler.open span::after {
   transform: rotate(-45deg);
   -webkit-transform: rotate(-45deg);
   top: 0px;
@@ -154,3 +154,65 @@
   font-size: 13px;
   color: #7d7d7d;
 }
+
+/* Responsive */
+
+@media (max-width: 1199px) {
+  .aside {
+    left: -270px;
+  }
+
+  .aside.open {
+    left: 0;
+  }
+
+  .nav-toggler {
+    display: flex;
+    left: 30px;
+  }
+
+  .aside .nav-toggler.open {
+    left: 300px;
+  }
+  .nav-toggler.open {
+    left: 300px; /* Move the toggler when the aside is open */
+  }
+}
+
+/* 
+@media (max-width: 991px) {
+  .service .service-item,
+  .blog .blog-item,
+  .portfolio .portfolio-item {
+    flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .about .about-content .personal-info,
+  .contact .contact-form .col-6,
+  .service .service-item,
+  .blog .blog-item,
+  .about .about-content .skills,
+  .about .about-content .education,
+  .about .about-content .experience {
+    flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .portfolio .portfolio-filter button {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .portfolio .portfolio-item,
+  .contact .contact-info-item {
+    flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    max-width: 100%;
+  }
+} */

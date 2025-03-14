@@ -1,10 +1,14 @@
 // src/components/Home/Home.jsx
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useContext } from "react";
 import { init } from "ityped";
 import "./Home.css";
+import { AsideContext } from "../../context/AsideContext";
 
 const Home = () => {
+  const { isAsideOpen } = useContext(AsideContext);
+
   const textRef = useRef();
+  console.log(isAsideOpen);
 
   useEffect(() => {
     init(textRef.current, {
@@ -20,7 +24,10 @@ const Home = () => {
   }, []);
 
   return (
-    <section className="home section active" id="home">
+    <section
+      className={`home section active ${isAsideOpen ? "aside-open" : ""}`}
+      id="home"
+    >
       <div className="container">
         <div className="intro">
           <img

@@ -22,6 +22,12 @@
   color: #2196f3;
 }
 
+.nav-toggler span,
+.nav-toggler span::before,
+.nav-toggler span::after {
+  background-color: #2196f3; /* Apply blue color to the hamburger icon */
+}
+
 .btn,
 .service .service-item .service-item-inner:hover .icon,
 .about .about-content .timeline .circle-dot,

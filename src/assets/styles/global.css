@@ -36,7 +36,7 @@ select {
   display: block;
   padding: 0 30px;
   position: fixed;
-  left: 270px;
+  left: 0;
   top: 0;
   right: 0;
   bottom: 0;
@@ -48,7 +48,12 @@ select {
   -webkit-transition: all 0.3s ease;
 }
 
+.section.aside-open {
+  left: 270px; /* Adjust this value to match the aside width */
+}
+
 .section.active {
+  background-color: #f2f2fc;
   opacity: 1;
   z-index: 2;
   animation: slideSection 1s ease;
@@ -57,8 +62,15 @@ select {
   -o-animation: slideSection 1s ease;
 }
 
-.section.back-section {
-  z-index: 1;
+.main-container {
+  background-color: #f2f2fc; /* Set the background color here */
+  min-height: 100vh;
+  /* position: relative; */
+}
+
+.main-content {
+  margin-left: 270px; /* Adjust based on aside width */
+  transition: margin-left 0.3s ease;
 }
 
 @keyframes slideSection {
@@ -277,4 +289,57 @@ body.dark .about .about-content .skills .skill-item .progress {
 
 body.dark .about .about-content .skills .skill-item .progress .progress-in {
   background-color: #2196f3; /* Skin color */
+}
+
+@media (max-width: 1199px) {
+  /* When aside is open on smaller screens, add a left margin */
+  .section {
+    left: 0; /* On smaller screens, default to no aside */
+  }
+
+  /* When aside is open on smaller screens, add a left margin */
+  .section.aside-open {
+    left: 270px; /* Adjust this value to match the aside width */
+  }
+
+  .about .about-content .personal-info .info-item p span {
+    display: block;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  .service .service-item,
+  .blog .blog-item,
+  .portfolio .portfolio-item {
+    flex: 0 0 50%;
+    -ms-flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .about .about-content .personal-info,
+  .contact .contact-form .col-6,
+  .service .service-item,
+  .blog .blog-item,
+  .about .about-content .skills,
+  .about .about-content .education,
+  .about .about-content .experience {
+    flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .portfolio .portfolio-filter button {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 575px) {
+  .portfolio .portfolio-item,
+  .contact .contact-info-item {
+    flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    max-width: 100%;
+  }
 }

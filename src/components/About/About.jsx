@@ -1,10 +1,16 @@
 // src/components/About/About.jsx
-import React from "react";
+import React, { useContext } from "react";
 import "./About.css";
+import { AsideContext } from "../../context/AsideContext";
 
 const About = () => {
+  const { isAsideOpen } = useContext(AsideContext);
+
   return (
-    <section className="about section" id="about">
+    <section
+      className={`about section active ${isAsideOpen ? "aside-open" : ""}`}
+      id="about"
+    >
       <div className="container">
         <div className="row">
           <div className="section-title padd-15">

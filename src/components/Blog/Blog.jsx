@@ -1,8 +1,11 @@
 // src/components/Blog/Blog.jsx
-import React from "react";
+import React, { useContext } from "react";
 import "./Blog.css";
+import { AsideContext } from "../../context/AsideContext";
 
 const Blog = () => {
+  const { isAsideOpen } = useContext(AsideContext);
+
   const blogItems = [
     {
       id: 1,
@@ -34,7 +37,10 @@ const Blog = () => {
   ];
 
   return (
-    <section className="blog section" id="blog">
+    <section
+      className={`blog section active ${isAsideOpen ? "aside-open" : ""}`}
+      id="blog"
+    >
       <div className="container">
         <div className="row">
           <div className="section-title padd-15">

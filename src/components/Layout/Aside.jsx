@@ -1,18 +1,15 @@
 // src/components/Layout/Aside.jsx
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { NavLink } from "react-router-dom";
 import "./Aside.css";
+import { AsideContext } from "../../context/AsideContext";
 
 const Aside = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleAside = () => {
-    setIsOpen(!isOpen);
-  };
+  const { isAsideOpen, toggleAside } = useContext(AsideContext);
 
   return (
     <>
-      <div className={`aside ${isOpen ? "open" : ""}`}>
+      <div className={`aside ${isAsideOpen ? "open" : ""}`}>
         <div className="aside-inner">
           <div className="logo">
             <NavLink to="/">Kanat</NavLink>
@@ -60,12 +57,12 @@ const Aside = () => {
             </li>
           </ul>
           <div className="copyright-text">
-            &copy; 2020 The WebShala Template
+            &copy; 2025 The WebShala Template
           </div>
         </div>
       </div>
       <div
-        className={`nav-toggler ${isOpen ? "open" : ""}`}
+        className={`nav-toggler ${isAsideOpen ? "open" : ""}`}
         onClick={toggleAside}
       >
         <span></span>

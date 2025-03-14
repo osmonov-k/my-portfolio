@@ -1,9 +1,11 @@
 // src/components/Portfolio/Portfolio.jsx
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./Portfolio.css";
+import { AsideContext } from "../../context/AsideContext";
 
 const Portfolio = () => {
   const [filter, setFilter] = useState("all");
+  const { isAsideOpen } = useContext(AsideContext);
 
   const portfolioItems = [
     {
@@ -50,7 +52,10 @@ const Portfolio = () => {
       : portfolioItems.filter((item) => item.category === filter);
 
   return (
-    <section className="portfolio section" id="portfolio">
+    <section
+      className={`portfolio section active ${isAsideOpen ? "aside-open" : ""}`}
+      id="portfolio"
+    >
       <div className="container">
         <div className="row">
           <div className="section-title padd-15">
