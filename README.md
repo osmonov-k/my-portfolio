@@ -1,5 +1,7 @@
 # Portfolio Website
 
+Welcome to my portfolio website! This is where I showcase various projects I’ve worked on, including web development, games, and business analytics/ML.
+
 ## Technologies Used:
 - **React (JS)** for building dynamic and responsive UIs.
 - **Vite** for fast development and optimized builds.
