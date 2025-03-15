@@ -18,6 +18,7 @@
   display: inline-block;
   border: 8px solid #ffffff;
   object-fit: cover;
+  image-rendering: optimizeQuality;
 }
 
 .home .intro h1 {

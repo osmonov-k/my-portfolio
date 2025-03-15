@@ -37,7 +37,11 @@ const Home = () => {
       <div className="container">
         <div className="intro">
           <img
-            src="/src/assets/images/about.jpeg"
+            src={
+              import.meta.env.MODE === "development"
+                ? "/src/assets/images/about.webp"
+                : "/images/about.webp"
+            }
             alt="profile"
             className="shadow-dark"
           />

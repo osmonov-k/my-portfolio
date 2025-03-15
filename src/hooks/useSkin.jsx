@@ -12,16 +12,21 @@ export const useSkin = () => {
     const existingSkinStyles = document.querySelectorAll("link[data-skin]");
     existingSkinStyles.forEach((style) => style.remove());
 
-    // Dynamically load the selected skin CSS
+    // Correct path based on environment
+    const isDev = import.meta.env.MODE === "development";
+    const skinPath = isDev
+      ? `/public/skins/${skin}.css`
+      : `/assets/skins/${skin}.css`; // Make sure skins are in public_html/assets/skins/
+
     if (skin !== "light" && skin !== "dark") {
       const link = document.createElement("link");
       link.rel = "stylesheet";
-      link.href = `/src/assets/styles/skins/${skin}.css`;
-      link.setAttribute("data-skin", skin);
+      link.href = skinPath;
+      link.setAttribute("data-skin", "true");
       document.head.appendChild(link);
     }
 
-    // Apply dark mode separately from skin selection
+    // Handle dark mode separately
     if (isDarkMode) {
       document.body.classList.add("dark");
     } else {
@@ -34,11 +39,7 @@ export const useSkin = () => {
     setIsDarkMode(darkModeEnabled);
     localStorage.setItem("darkMode", darkModeEnabled.toString());
 
-    if (darkModeEnabled) {
-      document.body.classList.add("dark");
-    } else {
-      document.body.classList.remove("dark");
-    }
+    document.body.classList.toggle("dark", darkModeEnabled);
   };
 
   return { skin, changeSkin, isDarkMode, toggleDarkMode };
