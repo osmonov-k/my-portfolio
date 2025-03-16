@@ -1,4 +1,4 @@
-/* src/assets/styles/skins/blue.css */
+/* Styling for the logo borders in the aside section */
 .aside .logo a::before {
   border-top: 4px solid #2196f3;
   border-left: 4px solid #2196f3;
@@ -9,6 +9,7 @@
   border-bottom: 4px solid #2196f3;
 }
 
+/* Hover effects and active state styling for various elements */
 .aside .nav li a:hover,
 .blog .blog-item-inner .blog-info .blog-tags a,
 .portfolio .portfolio-item .portfolio-info .icon .fa,
@@ -22,12 +23,14 @@
   color: #2196f3;
 }
 
+/* Styling for the hamburger icon (nav toggler) */
 .nav-toggler span,
 .nav-toggler span::before,
 .nav-toggler span::after {
   background-color: #2196f3; /* Apply blue color to the hamburger icon */
 }
 
+/* Button and icon background color, as well as other UI elements */
 .btn,
 .service .service-item .service-item-inner:hover .icon,
 .about .about-content .timeline .circle-dot,
@@ -43,11 +46,12 @@
   background-color: #2196f3;
 }
 
+/* Active state for portfolio filter buttons */
 .portfolio .portfolio-filter button.active {
   border-color: #2196f3;
 }
 
-/* Dark mode overrides */
+/* Dark mode specific overrides for the logo borders */
 body.dark .aside .logo a::before {
   border-top: 4px solid #2196f3;
   border-left: 4px solid #2196f3;
@@ -58,11 +62,13 @@ body.dark .aside .logo a::after {
   border-bottom: 4px solid #2196f3;
 }
 
+/* Dark mode styles for hover and active states */
 body.dark .aside .nav li a:hover,
 body.dark .aside .nav li a.active {
   color: #2196f3;
 }
 
+/* Dark mode button and icon background color */
 body.dark .btn,
 body.dark .service .service-item .service-item-inner:hover .icon,
 body.dark .about .about-content .timeline .circle-dot,
@@ -78,6 +84,7 @@ body.dark .home .intro .social-links a {
   background-color: #2196f3;
 }
 
+/* Dark mode active state for portfolio filter buttons */
 body.dark .portfolio .portfolio-filter button.active {
   border-color: #2196f3;
 }

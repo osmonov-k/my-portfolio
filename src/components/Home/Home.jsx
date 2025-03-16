@@ -1,4 +1,3 @@
-// src/components/Home/Home.jsx
 import React, { useEffect, useRef, useContext } from "react";
 import { init } from "ityped";
 import "./Home.css";
@@ -52,7 +51,12 @@ const Home = () => {
               <i className="fa fa-twitter"></i>
             </a>
             <a href="#">
-              <i className="fa fa-facebook"></i>
+              <i
+                className="fa fa-facebook"
+                href="https://www.facebook.com/kanatosmonov1"
+                target="_blank"
+                rel="noopener noreferrer"
+              ></i>
             </a>
             <a href="#">
               <i className="fa fa-instagram"></i>

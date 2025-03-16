@@ -1,4 +1,3 @@
-// src/components/Contact/Contact.jsx
 import React, { useContext } from "react";
 import "./Contact.css";
 import { AsideContext } from "../../context/AsideContext";

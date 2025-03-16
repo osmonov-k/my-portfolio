@@ -40,8 +40,13 @@ const About = () => {
 
             <div className="personal-info padd-15">
               <div className="row">
-                <a href="#" className="btn">
-                  Download Cv
+                <a
+                  href="/KanatOsmon_FrontendEngineer.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn"
+                >
+                  View Resume
                 </a>
               </div>
             </div>

@@ -1,4 +1,3 @@
-// src/components/SectionTitle/SectionTitle.jsx
 import React from "react";
 import "./SectionTitle.css";
 

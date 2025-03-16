@@ -1,4 +1,3 @@
-// src/components/Portfolio/Portfolio.jsx
 import React, { useContext, useState } from "react";
 import "./Portfolio.css";
 import { AsideContext } from "../../context/AsideContext";

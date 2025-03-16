@@ -1,4 +1,3 @@
-// src/components/Preloader/Preloader.jsx
 import React, { useEffect } from "react";
 import "./Preloader.css";
 

@@ -1,4 +1,3 @@
-// src/context/SkinContext.jsx
 import React, { createContext, useState } from "react";
 
 export const SkinContext = createContext();
