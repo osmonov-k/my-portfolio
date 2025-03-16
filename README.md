@@ -1,6 +1,6 @@
 # Portfolio Website
 
-website [kanatosmon.com](https://kanatosmon.com/)
+Website [kanatosmon.com](https://kanatosmon.com/)
 
 Welcome to my portfolio website! This is where I showcase various projects I’ve worked on, including web development, games, and business analytics/ML.
 
