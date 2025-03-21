@@ -45,7 +45,8 @@ body.dark .aside .nav li a.active,
 .section-title h2::after,
 .aside .nav-toggler span::before,
 .aside .nav-toggler span::after,
-.home .intro .social-links a {
+.home .intro .social-links a,
+.portfolio .portfolio-item .portfolio-content .portfolio-button {
   background-color: #72b626;
 }
 
@@ -83,7 +84,8 @@ body.dark .section-title h2::before,
 body.dark .section-title h2::after,
 body.dark .aside .nav-toggler span::before,
 body.dark .aside .nav-toggler span::after,
-body.dark .home .intro .social-links a {
+body.dark .home .intro .social-links a,
+.portfolio .portfolio-item .portfolio-content .portfolio-button {
   background-color: #72b626;
 }
 

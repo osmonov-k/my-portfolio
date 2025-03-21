@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import "./Portfolio.css";
 import { AsideContext } from "../../context/AsideContext";
+import ProjectCard from "./ProjectCard"; // Import the reusable ProjectCard component
 
 const Portfolio = () => {
   const [filter, setFilter] = useState("all");
@@ -8,40 +9,70 @@ const Portfolio = () => {
 
   const portfolioItems = [
     {
-      id: 1,
+      id: 2,
       category: "web-design",
-      image: "/images/portfolio/1.jpg",
-      title: "Web Design",
+      image: "/ecommerce.webp",
+      title: "Ecommerce",
+      link: "https://ecommerce.kanatosmon.com/",
+      github: "https://github.com/yourusername/ecommerce",
+      description:
+        "A fully functional ecommerce platform featuring product listings, a shopping cart, and seamless user authentication. Built with a focus on performance and user experience.",
+      tools: ["JavaScript", "React", "Tailwind CSS", "HTML5", "Context API"],
     },
     {
-      id: 2,
-      category: "photography",
-      image: "/images/portfolio/2.jpg",
-      title: "Photography",
+      id: 1,
+      category: "web-design",
+      image: "/portfolio.webp",
+      title: "Portfolio",
+      link: "https://kanatosmon.com/",
+      github: "https://github.com/yourusername/portfolio",
+      description:
+        "A personal portfolio website showcasing my expertise in web development, game design, and business analytics/ML. Highlights include interactive projects, clean design, and responsive layouts.",
+      tools: ["JavaScript", "React", "CSS3", "HTML5", "Context API"],
     },
     {
       id: 3,
       category: "wordpress",
       image: "/images/portfolio/3.jpg",
       title: "Wordpress",
+      link: "https://example.com/wordpress",
+      github: "https://github.com/yourusername/wordpress",
+      description:
+        "A WordPress-based project showcasing custom themes and plugins.",
+      tools: ["WordPress", "PHP", "CSS3", "JavaScript"],
     },
     {
       id: 4,
       category: "web-design",
       image: "/images/portfolio/4.jpg",
       title: "Web Design",
+      link: "https://example.com/web-design",
+      github: "https://github.com/yourusername/web-design",
+      description:
+        "A modern web design project with a focus on user experience and accessibility.",
+      tools: ["Figma", "HTML5", "CSS3", "JavaScript"],
     },
     {
       id: 5,
       category: "wordpress",
       image: "/images/portfolio/5.jpg",
       title: "Wordpress",
+      link: "https://example.com/wordpress2",
+      github: "https://github.com/yourusername/wordpress2",
+      description:
+        "A WordPress blog with custom integrations and SEO optimization.",
+      tools: ["WordPress", "SEO", "PHP", "CSS3"],
     },
     {
       id: 6,
       category: "photography",
       image: "/images/portfolio/6.jpg",
       title: "Photography",
+      link: "https://example.com/photography",
+      github: "https://github.com/yourusername/photography",
+      description:
+        "A photography portfolio showcasing stunning visuals and responsive design.",
+      tools: ["JavaScript", "CSS3", "HTML5"],
     },
   ];
 
@@ -94,24 +125,12 @@ const Portfolio = () => {
           </div>
         </div>
         <div className="row">
-          {filteredItems.map((item) => (
-            <div
-              className="portfolio-item padd-15"
+          {filteredItems.map((item, index) => (
+            <ProjectCard
               key={item.id}
-              data-category={item.category}
-            >
-              <div className="portfolio-item-inner shadow-dark">
-                <div className="portfolio-img">
-                  <img src={item.image} alt={item.title} />
-                </div>
-                <div className="portfolio-info">
-                  <h4>{item.title}</h4>
-                  <div className="icon">
-                    <i className="fa fa-search"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
+              item={item}
+              isImageLeft={index % 2 !== 0} // Alternate image sides
+            />
           ))}
         </div>
       </div>

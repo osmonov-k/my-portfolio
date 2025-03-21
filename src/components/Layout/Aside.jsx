@@ -55,9 +55,7 @@ const Aside = () => {
               </NavLink>
             </li>
           </ul>
-          <div className="copyright-text">
-            &copy; 2025 The WebShala Template
-          </div>
+          <div className="copyright-text">&copy; by Kanat Osmon</div>
         </div>
       </div>
       <div

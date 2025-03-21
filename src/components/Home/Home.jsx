@@ -35,15 +35,7 @@ const Home = () => {
     >
       <div className="container">
         <div className="intro">
-          <img
-            src={
-              import.meta.env.MODE === "development"
-                ? "/src/assets/images/about.webp"
-                : "/images/about.webp"
-            }
-            alt="profile"
-            className="shadow-dark"
-          />
+          <img src="/about.webp" alt="profile" className="shadow-dark" />
           <h1>Kanat Osmonov</h1>
           <span className="iTyped" ref={textRef}></span>
           <div className="social-links">
