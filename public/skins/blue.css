@@ -47,6 +47,11 @@
   background-color: #2196f3;
 }
 
+.portfolio .portfolio-item .portfolio-content .portfolio-button:hover {
+  background-color: #1976d2; /* Slightly darker shade of blue */
+  transition: background-color 0.3s ease-in-out;
+}
+
 /* Active state for portfolio filter buttons */
 .portfolio .portfolio-filter button.active {
   border-color: #2196f3;

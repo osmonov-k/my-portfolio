@@ -50,6 +50,11 @@ body.dark .aside .nav li a.active,
   background-color: #72b626;
 }
 
+.portfolio .portfolio-item .portfolio-content .portfolio-button:hover {
+  background-color: #5a9219; /* Slightly darker shade of green */
+  transition: background-color 0.3s ease-in-out;
+}
+
 /* Active state for portfolio filter buttons */
 .portfolio .portfolio-filter button.active {
   border-color: #72b626;

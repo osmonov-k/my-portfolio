@@ -89,6 +89,11 @@ body.dark .home .intro .social-links a,
   background-color: #ec1839;
 }
 
+.portfolio .portfolio-item .portfolio-content .portfolio-button:hover {
+  background-color: #c51130; /* Darker shade of red */
+  transition: background-color 0.3s ease-in-out;
+}
+
 /* Dark mode active state for portfolio filter buttons */
 body.dark .portfolio .portfolio-filter button.active {
   border-color: #ec1839;

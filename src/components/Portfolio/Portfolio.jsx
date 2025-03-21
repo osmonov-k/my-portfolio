@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import "./Portfolio.css";
 import { AsideContext } from "../../context/AsideContext";
-import ProjectCard from "./ProjectCard"; // Import the reusable ProjectCard component
+import ProjectCard from "./ProjectCard";
 
 const Portfolio = () => {
   const [filter, setFilter] = useState("all");
@@ -9,23 +9,23 @@ const Portfolio = () => {
 
   const portfolioItems = [
     {
-      id: 2,
+      id: 1,
       category: "web-design",
       image: "/ecommerce.webp",
       title: "Ecommerce",
       link: "https://ecommerce.kanatosmon.com/",
-      github: "https://github.com/yourusername/ecommerce",
+      github: "https://github.com/osmonov-k/techStore",
       description:
         "A fully functional ecommerce platform featuring product listings, a shopping cart, and seamless user authentication. Built with a focus on performance and user experience.",
       tools: ["JavaScript", "React", "Tailwind CSS", "HTML5", "Context API"],
     },
     {
-      id: 1,
+      id: 2,
       category: "web-design",
       image: "/portfolio.webp",
       title: "Portfolio",
       link: "https://kanatosmon.com/",
-      github: "https://github.com/yourusername/portfolio",
+      github: "https://github.com/osmonov-k/my-portfolio",
       description:
         "A personal portfolio website showcasing my expertise in web development, game design, and business analytics/ML. Highlights include interactive projects, clean design, and responsive layouts.",
       tools: ["JavaScript", "React", "CSS3", "HTML5", "Context API"],
