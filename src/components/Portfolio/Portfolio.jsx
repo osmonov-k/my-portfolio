@@ -27,11 +27,47 @@ const Portfolio = () => {
       link: "https://kanatosmon.com/",
       github: "https://github.com/osmonov-k/my-portfolio",
       description:
-        "A personal portfolio website showcasing my expertise in web development, game design, and business analytics/ML. Highlights include interactive projects, clean design, and responsive layouts.",
+        "A classic two-player strategy game where you drop colored discs to connect four in a row. It’s all about tactics, blocking your opponent, and thinking ahead. Perfect for quick, strategic fun with friends.",
+
       tools: ["JavaScript", "React", "CSS3", "HTML5", "Context API"],
     },
     {
       id: 3,
+      category: "games",
+      image: "/connect4.png",
+      title: "Connect Four",
+      link: "https://playfolio.kanatosmon.com/",
+      github: "https://github.com/osmonov-k/playfolio",
+      description:
+        "A fun daily word guessing game with six tries to crack a five-letter word. Based on the original Wordle, it’s a perfect mix of logic and vocabulary challenges.",
+
+      tools: ["React", "modular CSS", "JavaScript", "useEffect"],
+    },
+    {
+      id: 4,
+      category: "games",
+      image: "/wordle.png",
+      title: "Wordle",
+      link: "https://playfolio.kanatosmon.com/",
+      github: "https://github.com/osmonov-k/playfolio",
+      description:
+        "A memory test game where you match pairs of cards. It’s a fun way to sharpen your brain and improve focus while enjoying a simple yet rewarding challenge.",
+
+      tools: ["React", "CSS", "JavaScript", "useState"],
+    },
+    {
+      id: 5,
+      category: "games",
+      image: "/memory.png",
+      title: "Memory",
+      link: "https://playfolio.kanatosmon.com/",
+      github: "https://github.com/osmonov-k/playfolio",
+      description:
+        "A delightful and challenging memory test game that helps sharpen your brain. Flip the cards and try to match pairs based on memory alone! The game starts easy, but as the number of cards increases, it becomes a fun and rewarding challenge. It’s the perfect game to test your focus and recall, and it's a great way to pass time while training your brain. Can you remember where all the matching pairs are hidden?",
+      tools: ["React", "CSS", "JavaScript", "DictionaryAPI"],
+    },
+    {
+      id: 6,
       category: "wordpress",
       image: "/images/portfolio/3.jpg",
       title: "Wordpress",
@@ -42,7 +78,7 @@ const Portfolio = () => {
       tools: ["WordPress", "PHP", "CSS3", "JavaScript"],
     },
     {
-      id: 4,
+      id: 7,
       category: "web-design",
       image: "/images/portfolio/4.jpg",
       title: "Web Design",
@@ -53,7 +89,7 @@ const Portfolio = () => {
       tools: ["Figma", "HTML5", "CSS3", "JavaScript"],
     },
     {
-      id: 5,
+      id: 8,
       category: "wordpress",
       image: "/images/portfolio/5.jpg",
       title: "Wordpress",
@@ -64,7 +100,7 @@ const Portfolio = () => {
       tools: ["WordPress", "SEO", "PHP", "CSS3"],
     },
     {
-      id: 6,
+      id: 9,
       category: "photography",
       image: "/images/portfolio/6.jpg",
       title: "Photography",
