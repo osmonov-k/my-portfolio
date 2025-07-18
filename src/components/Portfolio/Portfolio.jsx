@@ -9,15 +9,47 @@ const Portfolio = () => {
 
   const portfolioItems = [
     {
-      id: 1,
+      id: 789,
       category: "web-design",
-      image: "/ecommerce.webp",
-      title: "Ecommerce",
-      link: "https://ecommerce.kanatosmon.com/",
-      github: "https://github.com/osmonov-k/techStore",
+      image: "/kare-landing.webp",
+      title: "Kare - ecommerce platform",
+      link: "https://kare.kanatosmon.com/",
+      github: "https://github.com/osmonov-k/kare-ecommerce.git",
       description:
-        "A fully functional ecommerce platform featuring product listings, a shopping cart, and seamless user authentication. Built with a focus on performance and user experience.",
-      tools: ["JavaScript", "React", "Tailwind CSS", "HTML5", "Context API"],
+        "MERN stack e-commerce (React/Node.js/MongoDB) on Hostinger VPS. Features: JWT auth, Stripe payments, Tailwind CSS UI. Includes product browsing, shopping cart, order tracking. Uses Cloudinary for images, Axios for APIs.",
+      tools: [
+        "React",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "JWT",
+        "Stripe API",
+        "Tailwind CSS",
+        "Axios",
+        "Cloudinary",
+        "Hostinger VPS",
+      ],
+    },
+    {
+      id: 786,
+      category: "web-design",
+      image: "/admin-kare-landing.webp",
+      title: "Admin panel for Kare ecommerce ",
+      link: "https://admin-kare.kanatosmon.com/",
+      github: "https://github.com/osmonov-k/kare-ecommerce.git",
+      description:
+        "React/Node.js admin dashboard on Hostinger VPS. JWT-secured admin access for product management (add/delete). MongoDB storage, Cloudinary uploads, Axios API calls. Clean Tailwind interface.",
+      tools: [
+        "React",
+        "Node.js",
+        "Express",
+        "MongoDB",
+        "JWT",
+        "Tailwind CSS",
+        "Axios",
+        "Cloudinary",
+        "Hostinger VPS",
+      ],
     },
     {
       id: 2,
@@ -27,9 +59,20 @@ const Portfolio = () => {
       link: "https://kanatosmon.com/",
       github: "https://github.com/osmonov-k/my-portfolio",
       description:
-        "A classic two-player strategy game where you drop colored discs to connect four in a row. It’s all about tactics, blocking your opponent, and thinking ahead. Perfect for quick, strategic fun with friends.",
+        "A personal portfolio website showcasing my expertise in web development, game design, and business analytics/ML. Highlights include interactive projects, clean design, and responsive layouts.",
 
       tools: ["JavaScript", "React", "CSS3", "HTML5", "Context API"],
+    },
+    {
+      id: 1,
+      category: "web-design",
+      image: "/ecommerce.webp",
+      title: "Electric appliances e store",
+      link: "https://ecommerce.kanatosmon.com/",
+      github: "https://github.com/osmonov-k/techStore",
+      description:
+        "A fully functional website featuring product listings, a shopping cart, and seamless user authentication. Built with a focus on performance and user experience.",
+      tools: ["JavaScript", "React", "Tailwind CSS", "HTML5", "Context API"],
     },
     {
       id: 3,
@@ -39,7 +82,7 @@ const Portfolio = () => {
       link: "https://playfolio.kanatosmon.com/",
       github: "https://github.com/osmonov-k/playfolio",
       description:
-        "A fun daily word guessing game with six tries to crack a five-letter word. Based on the original Wordle, it’s a perfect mix of logic and vocabulary challenges.",
+        "A classic two-player strategy game I used to play with friends, where you try to connect four discs in a row. It’s all about strategy, blocking your opponent, and thinking ahead to claim victory!",
 
       tools: ["React", "modular CSS", "JavaScript", "useEffect"],
     },
@@ -51,9 +94,9 @@ const Portfolio = () => {
       link: "https://playfolio.kanatosmon.com/",
       github: "https://github.com/osmonov-k/playfolio",
       description:
-        "A memory test game where you match pairs of cards. It’s a fun way to sharpen your brain and improve focus while enjoying a simple yet rewarding challenge.",
+        "A fun daily word guessing game with six tries to crack a five-letter word. Based on the original Wordle, it’s a perfect mix of logic and vocabulary challenges.",
 
-      tools: ["React", "CSS", "JavaScript", "useState"],
+      tools: ["React", "CSS3", "JavaScript", "DictionaryAPI"],
     },
     {
       id: 5,
@@ -63,52 +106,8 @@ const Portfolio = () => {
       link: "https://playfolio.kanatosmon.com/",
       github: "https://github.com/osmonov-k/playfolio",
       description:
-        "A delightful and challenging memory test game that helps sharpen your brain. Flip the cards and try to match pairs based on memory alone! The game starts easy, but as the number of cards increases, it becomes a fun and rewarding challenge. It’s the perfect game to test your focus and recall, and it's a great way to pass time while training your brain. Can you remember where all the matching pairs are hidden?",
-      tools: ["React", "CSS", "JavaScript", "DictionaryAPI"],
-    },
-    {
-      id: 6,
-      category: "wordpress",
-      image: "/images/portfolio/3.jpg",
-      title: "Wordpress",
-      link: "https://example.com/wordpress",
-      github: "https://github.com/yourusername/wordpress",
-      description:
-        "A WordPress-based project showcasing custom themes and plugins.",
-      tools: ["WordPress", "PHP", "CSS3", "JavaScript"],
-    },
-    {
-      id: 7,
-      category: "web-design",
-      image: "/images/portfolio/4.jpg",
-      title: "Web Design",
-      link: "https://example.com/web-design",
-      github: "https://github.com/yourusername/web-design",
-      description:
-        "A modern web design project with a focus on user experience and accessibility.",
-      tools: ["Figma", "HTML5", "CSS3", "JavaScript"],
-    },
-    {
-      id: 8,
-      category: "wordpress",
-      image: "/images/portfolio/5.jpg",
-      title: "Wordpress",
-      link: "https://example.com/wordpress2",
-      github: "https://github.com/yourusername/wordpress2",
-      description:
-        "A WordPress blog with custom integrations and SEO optimization.",
-      tools: ["WordPress", "SEO", "PHP", "CSS3"],
-    },
-    {
-      id: 9,
-      category: "photography",
-      image: "/images/portfolio/6.jpg",
-      title: "Photography",
-      link: "https://example.com/photography",
-      github: "https://github.com/yourusername/photography",
-      description:
-        "A photography portfolio showcasing stunning visuals and responsive design.",
-      tools: ["JavaScript", "CSS3", "HTML5"],
+        "A fun and challenging memory game where you flip cards to match pairs. It starts easy, but as the cards increase, it becomes a rewarding test of focus and recall. Can you remember where all the pairs are hidden?",
+      tools: ["React", "modular CSS", "JavaScript", "useState"],
     },
   ];
 
@@ -146,8 +145,8 @@ const Portfolio = () => {
             </button>
             <button
               type="button"
-              className={filter === "photography" ? "active" : ""}
-              onClick={() => setFilter("photography")}
+              className={filter === "games" ? "active" : ""}
+              onClick={() => setFilter("games")}
             >
               Games
             </button>
